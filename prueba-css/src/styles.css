@@ -21,7 +21,7 @@ body {
   
   background-image: url("./assets/bg-triangles.png");
   background-repeat: no-repeat;
-  background-position: top left;
+  background-position: left top;
   background-size: cover;
 }
 
@@ -135,7 +135,7 @@ body {
 /* Desktop */
 @media (min-width: 768px) {
   body {
-    background-size: auto;
+    background-size: auto 100%;
     padding: 32px;
   }
 
