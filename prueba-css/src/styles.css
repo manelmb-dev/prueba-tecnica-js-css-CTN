@@ -4,6 +4,10 @@
   padding: 10px;
 }
 
+:root {
+  --accent-color: #26DEF6;
+}
+
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
       Ubuntu, "Helvetica Neue", sans-serif;
@@ -47,4 +51,12 @@ body {
     flex-direction: row;
     justify-content: space-between;
   }
+}
+
+.instructions-title {
+  color: var(--accent-color);
+}
+
+.instructions .list li::marker {
+  color: var(--accent-color);
 }
