@@ -44,7 +44,7 @@ body {
 .content {
   display: flex;
   flex-direction: column;
-  padding: 16px;
+  padding: 24px;
   gap: 32px;
 
   max-width: 1200px;
@@ -63,20 +63,28 @@ body {
 .data {
   display: flex;
   flex-direction: column;
+  flex: 3;
 }
 
 .test-data {
   display: flex;
+  flex: 1;
   flex-direction: column;
-  margin-top: 16px;
+  background-color: #9FC5E8;
   align-items: center;
+  justify-content: space-around;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .results-cards {
   display: flex;
   flex-direction: row;
-  gap: 16px;
-  margin-top: 16px;
+  flex: 2;
+}
+
+.card-title {
+  font-weight: bold;
 }
 
 .data-card {
@@ -85,8 +93,18 @@ body {
   flex: 1;
   font-size: 1rem;
   align-items: center;
-  justify-content: center;
-  text-align: center;
+  justify-content: space-around;
+}
+
+.expected {
+  background-color: #8FCE00;
+  padding: 16px;
+}
+
+.your-result {
+  background-color: #CE0079;
+  padding: 16px;
+  border-bottom-right-radius: 8px;
 }
 
 /* Desktop */
@@ -101,10 +119,8 @@ body {
   }
   
   .content {
-    max-width: 1200px;
-    margin: 0 auto;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: stretch;
   }
 
   .instructions {
