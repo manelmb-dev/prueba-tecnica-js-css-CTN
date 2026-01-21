@@ -27,18 +27,20 @@ document.getElementById("app").innerHTML = `
         <h2 class="card-title">Test Data</h2>
         <div>${arrayTest}</div>
       </div>
-    
-      <div class="expected">
-        <h2 class="card-title">Expected result</h2>
-        <div>4</div>
-      </div>
 
-      <div class="your-result">
-        <h2 class="card-title">Your Result</h2>
-        <div>4</div>
+      <div class="results-cards">
+        <div class="data-card expected">
+          <h2 class="card-title">Expected result</h2>
+          <div>4</div>
+        </div>
+
+        <div class="data-card your-result">
+          <h2 class="card-title">Your Result</h2>
+          <div>4</div>
+        </div>
       </div>
     </section>
   </main>
-  
+
 </div>
 `;
