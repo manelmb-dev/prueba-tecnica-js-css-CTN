@@ -5,6 +5,7 @@
 }
 
 :root {
+  --primary-color: #0E4475;
   --accent-color: #26DEF6;
 }
 
@@ -14,7 +15,7 @@ body {
   height: 100%;
   width: 100%;
   padding: 16px;
-  background-color: #0E4475;
+  background-color: var(--primary-color);
   color: #C0E7FA;
   
   background-image: url("./assets/bg-triangles.png");
@@ -70,9 +71,10 @@ body {
   display: flex;
   flex: 1;
   flex-direction: column;
-  background-color: #9FC5E8;
   align-items: center;
   justify-content: space-around;
+  text-align: center;
+  background-color: #9FC5E8;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
@@ -85,15 +87,16 @@ body {
 
 .card-title {
   font-weight: bold;
+  color: var(--primary-color);
 }
 
 .data-card {
   display: flex;
   flex-direction: column;
   flex: 1;
-  font-size: 1rem;
   align-items: center;
   justify-content: space-around;
+  text-align: center;
 }
 
 .expected {
