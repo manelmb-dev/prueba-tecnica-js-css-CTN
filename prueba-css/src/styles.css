@@ -23,3 +23,28 @@ body {
     background-size: auto;
   }
 }
+
+.header {
+  display: flex;
+  flex-direction: column; /* mobile */
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+#title {
+  font-size: 2.8rem;
+  text-align: center;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+}
+
+@media (min-width: 1024px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
